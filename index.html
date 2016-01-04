@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Anoop Mundathan - Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<!--HEADER-->
+	<header>
+
+			<div class="row header-row">
+
+				<div class="col-2">
+					<div class="header-logo">
+						<img class="header-logo logo" src="images/udacity_logo.svg" alt="udacity logo">
+						
+					</div>
+				</div>
+
+				<div class="col-9">
+						<div class="header-title">
+								
+					<h1 class="header-title name">Anoop Mundathan</h1>
+							<h2 class="header-title skill">Front End Developer</h2>
+						</div>	
+
+				</div>
+
+				<div class="col-1">
+					<a id="menu" class="header__menu">
+
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            				<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          				</svg>
+    				</a>
+
+    			</div>
+
+			</div>
+
+			<div class="row header-nav">
+
+    			<div class="col-12">
+					<nav id="drawer" class="nav">
+						<ul class="nav__list">
+        					<li class="nav__item"><a href="#1">Resume</a></li>
+        					<li class="nav__item"><a href="#2">Arcade Game</a></li>
+        					<li class="nav__item"><a href="#3">Optimization</a></li>
+        					<li class="nav__item"><a href="#4">Neighberhood</a></li>
+        					<li class="nav__item"><a href="#5">Health Tracker</a></li>
+        					<li class="nav__item"><a href="#6">Feed Reader Testing </a></li>
+      	 				</ul>
+    				</nav>
+				</div>
+
+			</div>
+
+	</header>
+
+	<div class="row">
+		<div class="col-12">
+			<hr>
+		</div>
+	</div>
+
+<!--MAIN SECTION-->
+	<main>
+		
+				<div class="row">
+					<div class="col-12">
+						<picture>
+					   		<source class="image main" media="(min-width:800px)" srcset="images/sunset_large_2x.jpg 2x, images/sunset_large_1x.jpg 1x">
+					   		<source class="image main" media="(min-width:550px)" srcset="images/sunset_medium.jpg">
+					   		<img  class="image main" src="images/sunset_small.jpg"  alt="sunset">
+						</picture>
+					</div>
+				</div>
+		
+
+
+		<div class="row">
+			<div class="col-12 feature-work" >
+				<h2>Featured Work </h2>
+			</div>
+		</div>
+
+		<section>
+		
+				<div class="row work">
+					<div class="col-4 project">
+						<picture id="1">
+							<source class="image" media="(min-width:800px)"  srcset="images/st-pancras_large_2x.jpg 2x, images/st-pancras_large_1x.jpg 1x" data-toggle="modal" data-target="#resume">
+							<source class="image" media="(min-width:550px)" srcset="images/st-pancras_medium.jpg" data-toggle="modal" data-target="#resume">
+							<img  class="image" src="images/st-pancras_small.jpg"  alt="st-pancras station" data-toggle="modal" data-target="#resume">
+						</picture>
+					
+						<h3>Resume</h3>
+							<p>
+								<a href="">https://github.com/anoopmundathan/resume</a>
+							</p>
+					</div>
+
+					<div class="col-4 project">
+						<picture id="2">
+							<source class="image"  media="(min-width:800px)"  srcset="images/wood_piece_large_2x.jpg 2x, images/wood_piece_large_1x.jpg 1x" data-toggle="modal" data-target="#game">
+							<source class="image" media="(min-width:550px)" srcset="images/wood_piece_medium.jpg" data-toggle="modal" data-target="#game">
+							<img  class="image" src="images/wood_piece_small.jpg"  alt="wood pieces" data-toggle="modal" data-target="#game">
+						</picture>
+						<h3>Arcade Game</h3>
+							<p>
+								<a href="">https://github.com/anoopmundathan/arcadegame</a>
+							</p>
+					</div>
+		
+					<div class="col-4 project">
+						<picture id="3">
+							<source class="image"  media="(min-width:800px)"  srcset="images/o2store_large_2x.jpg 2x, images/o2store_large_1x.jpg 1x" data-toggle="modal" data-target="#opti">
+							<source class="image" media="(min-width:550px)" srcset="images/o2store_medium.jpg" data-toggle="modal" data-target="#opti">
+							<img  class="image" src="images/o2store_small.jpg"  alt="o2 store" data-toggle="modal" data-target="#opti">
+						</picture>
+						<h3>Website Optimization</h3>
+							<p>
+								<a href="">https://github.com/lacyjpr/optimization</a>
+							</p>
+					</div>
+				</div>
+
+				<div class="row work">
+					<div class="col-4 project">
+						<picture id="4">
+							<source class="image" media="(min-width:800px)"  srcset="images/canary_wharf_large_2x.jpg 2x, images/canary_wharf_large_1x.jpg 1x" data-toggle="modal" data-target="#map">
+							<source class="image" media="(min-width:550px)" srcset="images/canary_wharf_medium.jpg" data-toggle="modal" data-target="#map">
+							<img  class="image" src="images/canary_wharf_small.jpg"  alt="canary wharf london" data-toggle="modal" data-target="#map">
+
+							
+						</picture>
+						<h3>Neighborhood Map</h3>
+							<p>
+								<a href="">https://github.com/anoopmundathan/map</a>
+							</p>
+					</div>
+
+					<div class="col-4 project">
+						<picture id="5">
+							<source class="image" media="(min-width:800px)"  srcset="images/cycle_large_2x.jpg 2x, images/cycle_large_1x.jpg 1x" data-toggle="modal" data-target="#health">
+							<source class="image" media="(min-width:550px)" srcset="images/cycle_medium.jpg" data-toggle="modal" data-target="#health">
+							<img  class="image" src="images/cycle_small.jpg"  alt="bicycle" data-toggle="modal" data-target="#health">
+
+							</picture>
+						<h3>Health Tracker</h3>
+							<p>
+								<a href="">https://github.com/anoopmundathan/health</a>
+							</p>
+					</div>
+		
+					<div class="col-4 project">
+						<picture id="6">
+							<source class="image" media="(min-width:800px)"  srcset="images/keyboard_large_2x.jpg 2x, images/keyboard_large_1x.jpg 1x" data-toggle="modal" data-target="#testing">
+							<source class="image" media="(min-width:550px)" srcset="images/keyboard_medium.jpg" data-toggle="modal" data-target="#testing">
+							<img  class="image" src="images/keyboard_small.jpg"  alt="mac keyboard" data-toggle="modal" data-target="#testing">
+							
+						</picture>
+						<h3>Feed Reader Testing</h3>
+							<p>
+								<a href="">https://github.com/lacyjpr/optimization</a>
+							</p>
+					</div>
+				</div>
+
+			
+
+		</section>
+
+	</main>
+
+
+<!-- Modal -->
+
+<div class="modal" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Udacity - Resume Project</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/st-pancras_small.jpg" alt="London St Pancras station">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel1">Udacity - Arcade Game Project</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/wood_piece_small.jpg" alt="Wood pieces">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="opti" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel2">Udacity - Website Optimization</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/o2store_small.jpg" alt="o2 store">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel3">Udacity - Neighborhood Map</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/canary_wharf_small.jpg" alt="canary wharf undergood station symbol">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="health" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel4">Udacity - Health Tracker</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/cycle_small.jpg" alt="bicycle">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="testing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel5">Udacity - Feed Reader Testing</h4>
+			</div>
+			<div class="modal-body">
+				<img class="img-responsive" src="images/keyboard_small.jpg" alt="Mac keyboard">
+				<p>Project Description goes here...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+	<!--FOOTER-->
+
+	<footer>
+		<div class="row">
+				<div class="col-12">
+					<hr>
+				</div>
+			</div>
+	</footer>
+
+
+<script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+
+</body>
+</html>

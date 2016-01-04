@@ -1,0 +1,392 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+      margin: 0;
+      padding: 0;
+
+      width: 100%;
+      height: 100%;
+
+      font-family: 'Lato', sans-serif;   
+}
+
+div {
+  margin: 0;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div:last-of-type{
+    margin-right: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.row {
+
+    margin: 0;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex; 
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+    
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* HEADER */
+
+.header-logo {
+     width: 80px; 
+}
+
+.header-title {
+    text-transform: uppercase;
+    vertical-align: center;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.name, .skill {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 3em;
+}
+
+.skill {
+        font-size: 1.9em;
+}
+
+
+/* HEADER - nav items*/
+
+.header__menu {
+
+  display: none;
+  float: right;
+}
+
+.nav {
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+
+  display: inline-block;
+  padding-top: 10px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.nav a {
+
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+
+  color: red;
+  
+}
+
+/* MAIN - Content*/
+
+.work {
+  
+  text-align: center;
+}
+
+.feature-work {
+
+    color: #6d6d6d;
+}
+
+.image {
+
+    width: 100%;
+    height: 40vh;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+.project {
+
+  margin-right: 15px;
+}
+
+.project:last-of-type {
+
+    margin-right: 0;
+}
+
+.modal {
+
+  width: 300px;
+  margin-left: 10vw;
+}
+
+/* Break Point 1 : Mobile */
+
+@media screen and (max-width: 590px) {
+
+   .row {
+          text-align: center;
+    }
+
+    .col-4 {
+      width: 100%;
+    }
+
+    .name {
+        font-size: 6.5vw;
+    }
+
+    .skill {
+        font-size: 4.8vw;
+    }
+
+    .header-title {
+        margin-left: 1px;
+        text-align: center;
+    }
+
+    .work {
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .project {
+        margin-right: 0;
+    }
+       
+}
+
+/* Break Point 2 : Tablet */
+
+@media screen and (max-width:1000px) and (min-width: 591px) {
+
+   .row {
+        text-align: center;
+    }
+
+    .col-9 {
+        width: 100%;
+    }
+
+   .col-1 {
+
+      width: 0;
+    }
+
+    .col-4 {
+
+        width: 50%;
+    }
+
+   .main {
+
+        height: 60vh;
+    }
+
+    .work {
+
+         flex-wrap:wrap;
+         justify-content:center;
+    }
+
+   .modal {
+        
+          margin-left: 30vw;
+    }
+}
+
+/*Break Point 3: Off canvas menu*/
+
+@media screen and (max-width:905px) {
+
+    .header-title {
+
+       margin-left: 1px;
+       text-align: right;
+    }
+
+   
+    .col-9 {
+        width: 80%;
+        margin-right: 2px;
+    }
+
+    .col-1 {
+
+        width: 8%;
+    }
+
+   .nav {
+
+        text-align: left;
+        
+    }
+    
+   .nav {
+
+        z-index: 10;
+        background-color: #fff;
+        width: 200px;
+        position: absolute;
+        -webkit-transform: translate(-500px, 0);
+        transform: translate(-500px, 0);
+        /*transition: transform 0.1s ease;*/
+    }
+
+   .nav__item {
+
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav.open {
+
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .header__menu {
+
+        display: inline;
+        padding-left: 0;
+        margin-top: 12px;
+        margin-left: 2px;
+    }
+
+    .header__menu svg {
+        width: 32px;
+        fill: #e0e0e0;
+    }
+
+}
+
+/* Break Point 4 : Desktop */
+
+@media screen and (min-width:1000px) {
+
+    body {
+
+        width: 1000px;
+        margin: auto;
+    }
+
+    .col-9 {
+
+        width: 100%;
+       
+    }
+
+    .col-1 {
+
+        width: 0;
+    }
+
+    
+    .main {
+
+        height: 70vh;
+    }
+
+    .modal {
+
+      margin-left: 40vw;
+    }
+
+}
+
+/* -- END -- */
